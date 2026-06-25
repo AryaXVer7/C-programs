@@ -12,15 +12,15 @@ int main()
     printf("what would u like to eat?:");
     fgets(item, sizeof(item), stdin);
 
-    printf("how much would u like?:\n");
+    printf("how much would u like?: ");
     scanf("%d",&quantity);
 
-    printf("what is the price?:\n");
+    printf("what is the price?: ");
     scanf("%f",&price);
 
     total=price*quantity;
     
-    printf("total price : %c %.2f",currency,total);
+    printf("total price : %c%f\n", currency, total);
 
     return 0;
 }
